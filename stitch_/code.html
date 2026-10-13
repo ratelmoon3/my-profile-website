@@ -1,0 +1,413 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="ko"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>문연호 | Portfolio</title>
+<!-- Google Fonts: Inter & Pretendard fallback -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Noto+Sans+KR:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration verbatim from Design System -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-error": "#ffffff",
+            "on-secondary-fixed-variant": "#3f465c",
+            "secondary-container": "#dae2fd",
+            "tertiary": "#0051b1",
+            "primary-container": "#2563eb",
+            "on-surface": "#0b1c30",
+            "tertiary-fixed": "#d8e2ff",
+            "error-container": "#ffdad6",
+            "surface-container-high": "#dce9ff",
+            "secondary": "#565e74",
+            "primary": "#004ac6",
+            "surface-container-low": "#eff4ff",
+            "surface-container-lowest": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "error": "#ba1a1a",
+            "on-secondary": "#ffffff",
+            "primary-fixed-dim": "#b4c5ff",
+            "on-surface-variant": "#434655",
+            "surface": "#f8f9ff",
+            "secondary-fixed": "#dae2fd",
+            "on-error-container": "#93000a",
+            "on-background": "#0b1c30",
+            "on-tertiary-container": "#edf0ff",
+            "outline-variant": "#c3c6d7",
+            "on-tertiary-fixed-variant": "#004395",
+            "on-tertiary-fixed": "#001a42",
+            "primary-fixed": "#dbe1ff",
+            "on-primary-container": "#eeefff",
+            "surface-variant": "#d3e4fe",
+            "surface-bright": "#f8f9ff",
+            "tertiary-fixed-dim": "#adc6ff",
+            "inverse-surface": "#213145",
+            "secondary-fixed-dim": "#bec6e0",
+            "on-primary": "#ffffff",
+            "on-secondary-container": "#5c647a",
+            "surface-container": "#e5eeff",
+            "surface-container-highest": "#d3e4fe",
+            "on-primary-fixed-variant": "#003ea8",
+            "tertiary-container": "#0f69dc",
+            "on-primary-fixed": "#00174b",
+            "surface-dim": "#cbdbf5",
+            "on-secondary-fixed": "#131b2e",
+            "inverse-primary": "#b4c5ff",
+            "background": "#f8f9ff",
+            "inverse-on-surface": "#eaf1ff",
+            "surface-tint": "#0053db",
+            "outline": "#737686"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xl": "2.5rem",
+            "margin": "2rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "margin-sm": "1rem",
+            "space-lg": "1.5rem",
+            "gutter-sm": "1rem",
+            "space-md": "1rem",
+            "gutter": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Inter", "Noto Sans KR", "sans-serif"],
+            "headline-md": ["Inter", "Noto Sans KR", "sans-serif"],
+            "body-lg": ["Inter", "Noto Sans KR", "sans-serif"],
+            "body-sm": ["Inter", "Noto Sans KR", "sans-serif"],
+            "headline-sm": ["Inter", "Noto Sans KR", "sans-serif"],
+            "label-md": ["Inter", "Noto Sans KR", "sans-serif"],
+            "display-xl-mobile": ["Inter", "Noto Sans KR", "sans-serif"],
+            "body-md": ["Inter", "Noto Sans KR", "sans-serif"],
+            "label-sm": ["Inter", "Noto Sans KR", "sans-serif"],
+            "display-xl": ["Inter", "Noto Sans KR", "sans-serif"],
+            "headline-lg-mobile": ["Inter", "Noto Sans KR", "sans-serif"],
+            "title-md": ["Inter", "Noto Sans KR", "sans-serif"]
+          },
+          "fontSize": {
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "display-xl-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "display-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "title-md": ["17px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .card-transition {
+      transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 200ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-transition:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary selection:text-on-primary">
+<!-- ========================================================================= -->
+<!-- TopNavBar (Shared Component JSON Source of Truth) -->
+<!-- ========================================================================= -->
+<header class="sticky top-0 w-full z-50 bg-surface-container-lowest/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-sm dark:shadow-none border-b border-outline-variant/40 dark:border-outline/40">
+<div class="flex items-center justify-between max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 h-16">
+<!-- Brand Logo Anchor -->
+<a class="flex items-center gap-2 text-title-md font-title-md font-bold text-on-surface dark:text-inverse-on-surface tracking-tight transition-all duration-200 active:scale-95" href="#home"><span class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm">문</span><span class="">문연호 <span class="text-secondary font-normal">| Portfolio</span></span></a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-primary dark:text-inverse-primary font-semibold border-b-2 border-primary dark:border-inverse-primary pb-1 text-label-md font-label-md transition-all duration-200" href="#home"><span class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm">문</span><span class="">문연호 <span class="text-secondary font-normal">| Portfolio</span></span></a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors text-label-md font-label-md" href="#about">
+          About
+        </a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors text-label-md font-label-md" href="#projects">
+          Projects
+        </a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-on-surface dark:hover:text-inverse-on-surface transition-colors text-label-md font-label-md" href="#contact">
+          Contact
+        </a>
+</nav>
+<!-- Trailing Action: Resume & Mail Icon -->
+<div class="flex items-center gap-3">
+<a aria-label="Mail contact" class="p-2 text-secondary hover:text-primary dark:hover:text-inverse-primary rounded-lg transition-colors flex items-center justify-center" href="#contact">
+<span class="material-symbols-outlined text-[20px]" data-icon="mail">mail</span>
+</a>
+<a class="inline-flex items-center gap-1.5 h-[40px] px-4 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all duration-200 active:scale-95 shadow-sm" href="#resume" onclick="alert('이력서 PDF를 불러옵니다.'); return false;">
+<span class="material-symbols-outlined text-[18px]" data-icon="download">download</span>
+<span class="">Resume</span>
+</a>
+</div>
+</div>
+</header>
+<main class="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
+<!-- ========================================================================= -->
+<!-- 2. Home (Hero Section) -->
+<!-- ========================================================================= -->
+<section class="pt-12 pb-16 md:py-24" id="home">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Left Column: Intro & Bio -->
+<div class="lg:col-span-7 flex flex-col items-start space-y-6">
+<!-- Badge / Sub-heading -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container border border-outline-variant/30 text-primary"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-md text-label-md font-semibold tracking-wide">Media, Journalism &amp; AI Researcher</span></div>
+<!-- Main Heading -->
+<h1 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface tracking-tight">안녕하세요, 기술과 미디어로 소통을 혁신하는 <span class="text-primary-container">문연호</span>입니다.</h1>
+<!-- One-line Intro -->
+<p class="text-body-lg font-body-lg text-on-surface font-medium leading-relaxed">미디어, 저널리즘, 정치 커뮤니케이션과 생성형 AI에 관심이 있는 대학생입니다.</p>
+<!-- Brief Bio Paragraph -->
+<p class="text-body-md font-body-md text-secondary leading-relaxed max-w-xl">사회과학 분야를 기반으로 디지털 공론장과 저널리즘 환경의 변화를 관찰하고, 생성형 AI를 활용한 뉴스 데이터 분석과 새로운 커뮤니케이션 가능성을 탐구하고 있습니다.</p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center justify-center h-[44px] px-6 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all duration-200 active:scale-95 shadow-sm" href="#projects">
+<span class="">프로젝트 보기</span>
+<span class="material-symbols-outlined ml-1.5 text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center h-[44px] px-6 rounded-lg bg-transparent text-on-surface border border-outline-variant hover:bg-surface-container-low transition-all duration-200 font-label-md text-label-md active:scale-95" href="#about">
+<span class="">소개 읽기</span>
+</a>
+</div>
+<!-- Quick Micro Metrics -->
+<div class="grid grid-cols-3 gap-6 pt-4 border-t border-outline-variant/40 w-full max-w-lg">
+<div>
+<p class="text-headline-sm font-headline-sm text-primary font-bold">3+</p>
+<p class="text-body-sm font-body-sm text-secondary">완성 프로젝트</p>
+</div>
+<div>
+<p class="text-headline-sm font-headline-sm text-primary font-bold">4.1</p>
+<p class="text-body-sm font-body-sm text-secondary">학점 (4.5 만점)</p>
+</div>
+<div>
+<p class="text-headline-sm font-headline-sm text-primary font-bold">Lab Intern</p>
+<p class="text-body-sm font-body-sm text-secondary">학부 연구생</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Profile Portrait & Floating Badges -->
+<div class="lg:col-span-5 flex justify-center relative">
+<div class="relative w-full max-w-[380px]">
+<!-- Ambient Glow -->
+<div class="absolute -inset-4 bg-primary-fixed-dim/30 rounded-3xl blur-2xl -z-10"></div>
+<!-- Profile Card -->
+<div class="relative bg-surface-container-lowest p-3 rounded-2xl border border-outline-variant/40 shadow-sm overflow-hidden">
+<img alt="이도현 프로필 사진" class="w-full aspect-[4/5] object-cover rounded-xl" data-alt="A clean, friendly, professional portrait photograph of a young Korean male university student wearing a crisp navy-blue sweater, smiling warmly in a bright modern university campus library. Soft natural sunlight illuminates the scene with a high-key light aesthetic. In the background, minimalist wooden shelves and blurred architecture create depth. The mood is ambitious, intellectual, and approachable." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT4_H02z5R1LIjzHu-mBiejR6iG0sCFdCekQVQsZ_hjcrobsnZ31oFZUCseq8uSlLhlOOUhwkCI1Ax3IQHh74MpWJIQ08Srf1XdxgayWSEU4I752QUByFwUFuIXuNVdEMh3MHygRmlvTOqTUX-vPdX1ZS6FaYhifWMRl8jLxZMTS-WaKfD8oPDtW2f0cCVGCzBlp3xOHPx4M1MmYupJ9PZnC9R4BUFmCOo90u1So3aDYPLNkAuQmjv">
+<!-- Bottom Status Banner -->
+<div class="mt-3 px-3 py-2 bg-surface-container-low rounded-lg flex items-center justify-between"><span class="flex items-center gap-1.5 text-body-sm font-body-sm text-on-surface font-medium"><span class="w-2 h-2 rounded-full bg-emerald-500"></span>2025 학부 연구 &amp; 프로젝트 진행 중</span><span class="text-label-sm font-label-sm text-secondary">Seoul, KR</span></div>
+</div>
+<!-- Floating Badge 1: GPA -->
+<div class="absolute -top-4 -left-4 bg-surface-container-lowest border border-outline-variant/50 rounded-xl px-3.5 py-2.5 shadow-md flex items-center gap-2.5 backdrop-blur-md"><div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[18px]" data-icon="school">school</span></div><div><p class="text-label-sm font-label-sm text-secondary">학업 및 연구</p><p class="text-label-md font-label-md text-on-surface font-bold">사회과학 &amp; 미디어</p></div></div>
+<!-- Floating Badge 2: Tech Focus -->
+<div class="absolute -bottom-4 -right-4 bg-surface-container-lowest border border-outline-variant/50 rounded-xl px-3.5 py-2.5 shadow-md flex items-center gap-2.5 backdrop-blur-md"><div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]" data-icon="auto_stories">auto_stories</span></div><div><p class="text-label-sm font-label-sm text-secondary">주요 관심 분야</p><p class="text-label-md font-label-md text-on-surface font-bold">미디어 커뮤니케이션 &amp; AI</p></div></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 3. About Section -->
+<!-- ========================================================================= -->
+<section class="py-16 md:py-24 border-t border-outline-variant/30" id="about">
+<!-- Section Header -->
+<div class="max-w-2xl mb-12">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md mb-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="person">person</span>
+<span class="">About Me</span>
+</div>
+<h2 class="text-headline-md font-headline-md text-on-surface tracking-tight mb-2">
+          학업 및 학술 탐구 여정
+        </h2>
+<p class="text-body-md font-body-md text-secondary">사회과학 분야를 공부하며 미디어와 정치, 디지털 저널리즘, 생성형 AI의 활용에 관심을 가지고 있습니다. 특히 뉴스 플랫폼, 온라인 댓글, 뉴스의 사회적 중요도 평가와 같은 주제를 연구하고 있습니다.</p>
+</div>
+<!-- Bento-style Modern Info Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Card 1: Academic Background -->
+<div class="md:col-span-6 bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/40 shadow-sm card-transition flex flex-col justify-between"><div><div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-4"><span class="material-symbols-outlined text-[22px]" data-icon="account_balance">account_balance</span></div><span class="text-label-sm font-label-sm text-primary uppercase font-bold tracking-wider">전공 및 학업</span><h3 class="text-headline-sm font-headline-sm text-on-surface mt-1 mb-2">미디어커뮤니케이션학 &amp; 언론정보학</h3><p class="text-body-sm font-body-sm text-secondary mb-4">사회과학 대학 재학 중 · 학업우수 및 연구 활동</p><p class="text-body-md font-body-md text-on-surface-variant mb-4">디지털 미디어 생태계, 정치 커뮤니케이션, 언론학 이론의 기초를 체계적으로 학습하며 데이터 기반 연구 방법론을 심화하고 있습니다.</p></div><div class="pt-4 border-t border-outline-variant/30"><p class="text-label-sm font-label-sm text-secondary mb-2">주요 이수 교과목:</p><div class="flex flex-wrap gap-1.5"><span class="h-7 px-3 rounded-full bg-surface-container text-secondary text-label-sm font-label-sm flex items-center">정치커뮤니케이션</span><span class="h-7 px-3 rounded-full bg-surface-container text-secondary text-label-sm font-label-sm flex items-center">디지털 저널리즘</span><span class="h-7 px-3 rounded-full bg-surface-container text-secondary text-label-sm font-label-sm flex items-center">미디어 데이터 분석</span><span class="h-7 px-3 rounded-full bg-surface-container text-secondary text-label-sm font-label-sm flex items-center">AI와 사회</span></div></div></div>
+<!-- Card 2: Current Research & Lab Internship -->
+<div class="md:col-span-6 bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/40 shadow-sm card-transition flex flex-col justify-between"><div><div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary mb-4"><span class="material-symbols-outlined text-[22px]" data-icon="biotech">biotech</span></div><span class="text-label-sm font-label-sm text-primary uppercase font-bold tracking-wider">현재 연구 및 공부 중인 분야</span><h3 class="text-headline-sm font-headline-sm text-on-surface mt-1 mb-2">디지털 공론장 및 LLM 미디어 연구</h3><p class="text-body-sm font-body-sm text-secondary mb-4">미디어 커뮤니케이션 &amp; 생성형 AI 융합 연구</p><p class="text-body-md font-body-md text-on-surface-variant mb-4">뉴스 플랫폼의 공론장 기능 변화, 온라인 댓글 인터랙션 분석 및 거대언어모델(LLM)을 활용한 뉴스 기사 맥락 분석을 연구 중입니다.</p></div><div class="p-3 bg-surface-container-low rounded-xl border border-outline-variant/30 flex items-start gap-3"><span class="material-symbols-outlined text-primary text-[20px] mt-0.5" data-icon="lightbulb">lightbulb</span><div class="text-body-sm font-body-sm text-on-surface"><span class="font-semibold">주요 연구 활동:</span> 네이버 뉴스 댓글 제한 효과 연구 및 프롬프트 조건별 LLM 뉴스 중요도 평가 실험 진행 중.</div></div></div>
+<!-- Card 3: Interests & Specialties (Full Width Bento Row) -->
+<div class="md:col-span-12 bg-surface-container-lowest p-6 md:p-8 rounded-2xl border border-outline-variant/40 shadow-sm card-transition"><div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6"><div><span class="text-label-sm font-label-sm text-primary uppercase font-bold tracking-wider">관심 분야 &amp; 역량 스펙트럼</span><h3 class="text-headline-sm font-headline-sm text-on-surface mt-1">미디어 이론과 생성형 AI의 융합 탐구</h3></div><span class="text-body-sm font-body-sm text-secondary">도메인 융합을 통한 시너지 창출</span></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4"><div class="p-4 rounded-xl bg-surface border border-outline-variant/30 hover:border-primary-container transition-colors"><div class="flex items-center gap-2 mb-2 text-primary font-semibold text-title-md font-title-md"><span class="material-symbols-outlined text-[20px]" data-icon="forum">forum</span><h4 class="">미디어와 정치 &amp; 온라인 공론장</h4></div><p class="text-body-sm font-body-sm text-secondary mb-3 leading-relaxed">정치인의 SNS 직접 소통, 디지털 시민 참여 양상 및 온라인 공론장의 담론 구조 분석.</p><div class="flex flex-wrap gap-1"><span class="h-6 px-2.5 rounded-full bg-surface-container-high text-on-surface text-[11px] font-medium flex items-center">미디어와 정치</span><span class="h-6 px-2.5 rounded-full bg-surface-container-high text-on-surface text-[11px] font-medium flex items-center">온라인 공론장</span><span class="h-6 px-2.5 rounded-full bg-surface-container-high text-on-surface text-[11px] font-medium flex items-center">SNS 담론</span></div></div><div class="p-4 rounded-xl bg-surface border border-outline-variant/30 hover:border-primary-container transition-colors"><div class="flex items-center gap-2 mb-2 text-primary font-semibold text-title-md font-title-md"><span class="material-symbols-outlined text-[20px]" data-icon="newspaper">newspaper</span><h4 class="">디지털 저널리즘 &amp; 뉴스 플랫폼</h4></div><p class="text-body-sm font-body-sm text-secondary mb-3 leading-relaxed">댓글 시스템 정책 변화의 효과, 뉴스 큐레이션 알고리즘 및 저널리즘 신뢰도 연구.</p><div class="flex flex-wrap gap-1"><span class="h-6 px-2.5 rounded-full bg-surface-container-high text-on-surface text-[11px] font-medium flex items-center">디지털 저널리즘</span><span class="h-6 px-2.5 rounded-full bg-surface-container-high text-on-surface text-[11px] font-medium flex items-center">뉴스 플랫폼</span><span class="h-6 px-2.5 rounded-full bg-surface-container-high text-on-surface text-[11px] font-medium flex items-center">댓글 분석</span></div></div><div class="p-4 rounded-xl bg-surface border border-outline-variant/30 hover:border-primary-container transition-colors"><div class="flex items-center gap-2 mb-2 text-primary font-semibold text-title-md font-title-md"><span class="material-symbols-outlined text-[20px]" data-icon="psychology">psychology</span><h4 class="">생성형 AI &amp; 뉴스 데이터 분석</h4></div><p class="text-body-sm font-body-sm text-secondary mb-3 leading-relaxed">대형 언어 모델(LLM) 기반 텍스트 마이닝, 프롬프트 엔지니어링 및 뉴스 중요도 평가 실험.</p><div class="flex flex-wrap gap-1"><span class="h-6 px-2.5 rounded-full bg-surface-container-high text-on-surface text-[11px] font-medium flex items-center">생성형 AI</span><span class="h-6 px-2.5 rounded-full bg-surface-container-high text-on-surface text-[11px] font-medium flex items-center">뉴스 데이터 분석</span><span class="h-6 px-2.5 rounded-full bg-surface-container-high text-on-surface text-[11px] font-medium flex items-center">LLM 프롬프트</span></div></div></div></div>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 4. Projects Section (Side-by-side 3 Column Grid on Desktop) -->
+<!-- ========================================================================= -->
+<section class="py-16 md:py-24 border-t border-outline-variant/30" id="projects">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div class="max-w-2xl">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md mb-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="code_blocks">code_blocks</span>
+<span class="">Featured Projects</span>
+</div>
+<h2 class="text-headline-md font-headline-md text-on-surface tracking-tight mb-2">
+            직접 기획하고 구현한 주요 프로젝트
+          </h2>
+<p class="text-body-md font-body-md text-secondary">미디어 생태계의 실제 현상과 생성형 AI의 연구 가능성을 검증하기 위해 탐구한 주요 프로젝트입니다.</p>
+</div>
+<div class="mt-4 md:mt-0">
+<span class="text-label-sm font-label-sm text-secondary">3개의 핵심 프로젝트 선별</span>
+</div>
+</div>
+<!-- Desktop 3-Column Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Project Card 1: UniCampus -->
+<article class="bg-surface-container-lowest rounded-2xl border border-outline-variant/40 shadow-sm overflow-hidden flex flex-col card-transition"><div class="relative w-full aspect-[16/10] bg-surface-container-low overflow-hidden border-b border-outline-variant/30"><img alt="뉴스 댓글과 온라인 공론장 연구 미리보기" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Modern clean software UI interface mockup of a university academic schedule planner. The dashboard displays intuitive weekly timetable blocks in soft blue accents, a GPA progress simulation ring meter, and student course cards. Set on a pristine light gray surface with minimalist tech aesthetics and high-resolution typography in Korean." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5cbgFbmCUN2ssC70f4BkgbzQHbXSg93nYMzXFBR7FqqKG0ospEITELv5R1yb0T9S6lxp2OoWzB-AeRsDA7L_z58Xnr-zK0qHBjqZK3fpSomsTXbEQ4SmvPwSn-vE8QwP_icED-wcKfrQGz-l7WgW0UWRVfKTbQOnjZTvOr26dLytPIEzrKW_Sm6RDJTm3Cesr2YEsdYR3zc3M3MHxhxoi_gSMz-Bpu8f6I0-KedC8KBf-dpm51-Kq"><div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-sm text-primary px-2.5 py-1 rounded-md text-label-sm font-label-sm font-semibold shadow-xs">Media &amp; Public Sphere</div></div><div class="p-6 flex-1 flex flex-col justify-between"><div><h3 class="text-headline-sm font-headline-sm text-on-surface font-bold tracking-tight mb-2">뉴스 댓글과 온라인 공론장 연구</h3><p class="text-body-md font-body-md text-secondary leading-relaxed mb-4">네이버 뉴스의 스포츠·문화 기사 댓글 제한 정책과 이에 따른 이용자의 공론장 참여 인식 및 담론 변화를 실증적으로 연구한 프로젝트입니다.</p><div class="flex flex-wrap gap-1.5 mb-6"><span class="h-7 px-3 rounded-full bg-surface-container-low border border-primary-fixed text-primary text-label-sm font-label-sm flex items-center font-medium">온라인 공론장</span><span class="h-7 px-3 rounded-full bg-surface-container text-secondary text-label-sm font-label-sm flex items-center">댓글 데이터 분석</span><span class="h-7 px-3 rounded-full bg-surface-container text-secondary text-label-sm font-label-sm flex items-center">미디어 정책</span></div></div><div class="pt-4 border-t border-outline-variant/30 flex items-center justify-between gap-2"><a class="inline-flex items-center gap-1 text-label-md font-label-md text-secondary hover:text-primary transition-colors" href="#" onclick="alert('연구 개요를 확인합니다.'); return false;"><span class="material-symbols-outlined text-[18px]" data-icon="article">article</span><span class="">연구 개요</span></a><a class="inline-flex items-center gap-1 text-label-md font-label-md text-primary font-semibold hover:underline" href="#" onclick="alert('상세 보고서를 엽니다.'); return false;"><span class="">상세 보고서</span><span class="material-symbols-outlined text-[16px]" data-icon="arrow_outward">arrow_outward</span></a></div></div></article>
+<!-- Project Card 2: VisionDoc -->
+<article class="bg-surface-container-lowest rounded-2xl border border-outline-variant/40 shadow-sm overflow-hidden flex flex-col card-transition"><div class="relative w-full aspect-[16/10] bg-surface-container-low overflow-hidden border-b border-outline-variant/30"><img alt="LLM 기반 뉴스 중요도 평가 미리보기" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Minimalist AI paper summarization application screen showing an uploaded research PDF with key technical takeaways rendered in 3 elegant summary cards. Electric blue highlights, clean white card containers, and clean graph visualizations show research metrics. Contemporary clean light-mode UI design with sharp precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzobEBCIAG9IXgSnhf511-r8B4H8g-QgvUiiL9keRX8vjcwHpmuTUBFqO0PRUe1fwviabuNeB7p0mUK7wU--0VI-b-28DoGT3H7xSiQDQ_3-k1M4BRXPDpiq8gNePd1-jueIimLpm3Nn6xN4dT4VPTRyipmSCSvDluy7JAXhwr31UyEgWxu6jFdLFn3vDlpW6O66JfgV4lp7aWQ7NVjI3gcboHtM60A7_Jl55wvl_djh_3YjqEMBbo"><div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-sm text-primary px-2.5 py-1 rounded-md text-label-sm font-label-sm font-semibold shadow-xs">Generative AI &amp; Journalism</div></div><div class="p-6 flex-1 flex flex-col justify-between"><div><h3 class="text-headline-sm font-headline-sm text-on-surface font-bold tracking-tight mb-2">LLM 기반 뉴스 중요도 평가</h3><p class="text-body-md font-body-md text-secondary leading-relaxed mb-4">Prompt, Context, Hallucination, Temperature 조건 변화에 따른 대형 언어 모델의 뉴스 기사 사회적 중요도 평가 일관성 및 편향 실험.</p><div class="flex flex-wrap gap-1.5 mb-6"><span class="h-7 px-3 rounded-full bg-surface-container-low border border-primary-fixed text-primary text-label-sm font-label-sm flex items-center font-medium">LLM / 프롬프트</span><span class="h-7 px-3 rounded-full bg-surface-container text-secondary text-label-sm font-label-sm flex items-center">뉴스 가치 평가</span><span class="h-7 px-3 rounded-full bg-surface-container text-secondary text-label-sm font-label-sm flex items-center">Python</span></div></div><div class="pt-4 border-t border-outline-variant/30 flex items-center justify-between gap-2"><a class="inline-flex items-center gap-1 text-label-md font-label-md text-secondary hover:text-primary transition-colors" href="#" onclick="alert('실험 보고서를 엽니다.'); return false;"><span class="material-symbols-outlined text-[18px]" data-icon="description">description</span><span class="">실험 보고서</span></a><a class="inline-flex items-center gap-1 text-label-md font-label-md text-primary font-semibold hover:underline" href="https://github.com/yeonho-moon" rel="noopener noreferrer" target="_blank"><span class="">코드 저장소</span><span class="material-symbols-outlined text-[16px]" data-icon="code">code</span></a></div></div></article>
+<!-- Project Card 3: EcoTrack -->
+<article class="bg-surface-container-lowest rounded-2xl border border-outline-variant/40 shadow-sm overflow-hidden flex flex-col card-transition"><div class="relative w-full aspect-[16/10] bg-surface-container-low overflow-hidden border-b border-outline-variant/30"><img alt="미디어와 정치 분석 미리보기" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Clean mobile-first campus eco-challenge app mockup on a white smartphone display. Visual badges show carbon reduction points, tumbler verification camera flow, and eco-leaderboard charts in refreshing navy and blue tones with modern UI craftsmanship. Soft ambient shadows on pure white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq16sIQaMGCxiPTn022m8z26zdEmkXmk5ME8BkcyWiETH7G5EvUO_wEPybDlPFAxHgdZ8XBmmMg7AqwUefAC_VOynxX8zmv9lTu8FgFueoQ3qBjOIcMIEDp113hQEtn17ftkaQU6vhn1wlBtrfVFtzwwbxeMVmu5JPl1pwqE-3NHzfdxS7uCPPYS_rrMkSGjh-nR1bumy5lVvALsC5iXgS3OpyBvYg15rQh7yOnUg-ye25OSEnRxLo"><div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-sm text-primary px-2.5 py-1 rounded-md text-label-sm font-label-sm font-semibold shadow-xs">Political Communication</div></div><div class="p-6 flex-1 flex flex-col justify-between"><div><h3 class="text-headline-sm font-headline-sm text-on-surface font-bold tracking-tight mb-2">미디어와 정치 분석</h3><p class="text-body-md font-body-md text-secondary leading-relaxed mb-4">정치인의 SNS 직접 소통 등 디지털 미디어 환경에서 변화하는 유권자와의 상호작용 및 정치 커뮤니케이션 현상을 체계적으로 분석한 프로젝트.</p><div class="flex flex-wrap gap-1.5 mb-6"><span class="h-7 px-3 rounded-full bg-surface-container-low border border-primary-fixed text-primary text-label-sm font-label-sm flex items-center font-medium">정치 커뮤니케이션</span><span class="h-7 px-3 rounded-full bg-surface-container text-secondary text-label-sm font-label-sm flex items-center">SNS 담론 분석</span><span class="h-7 px-3 rounded-full bg-surface-container text-secondary text-label-sm font-label-sm flex items-center">정치 미디어</span></div></div><div class="pt-4 border-t border-outline-variant/30 flex items-center justify-between gap-2"><a class="inline-flex items-center gap-1 text-label-md font-label-md text-secondary hover:text-primary transition-colors" href="#" onclick="alert('분석 리포트를 엽니다.'); return false;"><span class="material-symbols-outlined text-[18px]" data-icon="insights">insights</span><span class="">분석 리포트</span></a><a class="inline-flex items-center gap-1 text-label-md font-label-md text-primary font-semibold hover:underline" href="#" onclick="alert('자료를 다운로드합니다.'); return false;"><span class="">자료 보기</span><span class="material-symbols-outlined text-[16px]" data-icon="visibility">visibility</span></a></div></div></article>
+</div>
+</section>
+<!-- ========================================================================= -->
+<!-- 5. Contact Section -->
+<!-- ========================================================================= -->
+<section class="py-16 md:py-24 border-t border-outline-variant/30" id="contact">
+<div class="bg-surface-container-lowest border border-outline-variant/50 rounded-3xl p-8 md:p-12 shadow-sm relative overflow-hidden">
+<!-- Decorative Ambient Background Gradient Accent -->
+<div class="absolute -right-20 -top-20 w-96 h-96 bg-primary-fixed/40 rounded-full blur-3xl pointer-events-none -z-0"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+<!-- Contact Info Left Column -->
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-flex items-center gap-2 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]" data-icon="connect_without_contact">connect_without_contact</span>
+<span class="">Get in Touch</span>
+</div>
+<h2 class="text-headline-md font-headline-md text-on-surface tracking-tight">
+              함께 이야기 나누고 싶으신가요?
+            </h2>
+<p class="text-body-md font-body-md text-secondary leading-relaxed">
+              새로운 프로젝트 협업, 인턴십 기회, 또는 기술적인 대화는 언제든 환영합니다. 편한 방법으로 연락 주시면 빠르게 회신드리겠습니다.
+            </p>
+<!-- Channels -->
+<div class="space-y-4 pt-2">
+<!-- Email Card with Copy Action -->
+<div class="p-4 rounded-xl bg-surface border border-outline-variant/40 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" data-icon="mail">mail</span>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-secondary">Email</p>
+<a class="text-title-md font-title-md text-on-surface font-semibold hover:text-primary transition-colors" href="mailto:hong@example.com">hong@example.com</a>
+</div>
+</div>
+<button class="h-9 px-3 rounded-lg border border-outline-variant bg-surface-container-lowest hover:bg-surface-container text-body-sm font-body-sm text-on-surface font-medium transition-colors flex items-center gap-1 active:scale-95" id="copy-btn" onclick="copyEmail()" title="이메일 주소 복사">
+<span class="material-symbols-outlined text-[16px]" data-icon="content_copy">content_copy</span>
+<span id="copy-text" class="">복사</span>
+</button>
+</div>
+<!-- GitHub Link -->
+<a class="p-4 rounded-xl bg-surface border border-outline-variant/40 flex items-center justify-between hover:border-primary-container transition-colors group" href="https://github.com/yeonho-moon" rel="noopener noreferrer" target="_blank"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary transition-colors"><span class="material-symbols-outlined text-[20px]" data-icon="terminal">terminal</span></div><div><p class="text-label-sm font-label-sm text-secondary">GitHub</p><p class="text-title-md font-title-md text-on-surface font-semibold group-hover:text-primary transition-colors">github.com/yeonho-moon</p></div></div><span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors text-[20px]" data-icon="arrow_outward">arrow_outward</span></a>
+<!-- Additional Links: LinkedIn & Tech Blog -->
+<div class="grid grid-cols-2 gap-3">
+<a class="p-3.5 rounded-xl bg-surface border border-outline-variant/40 flex items-center justify-between hover:border-primary-container transition-colors" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<span class="text-label-md font-label-md text-on-surface font-semibold">LinkedIn 프로필</span>
+<span class="material-symbols-outlined text-[18px] text-secondary" data-icon="open_in_new">open_in_new</span>
+</a>
+<a class="p-3.5 rounded-xl bg-surface border border-outline-variant/40 flex items-center justify-between hover:border-primary-container transition-colors" href="https://velog.io" rel="noopener noreferrer" target="_blank">
+<span class="text-label-md font-label-md text-on-surface font-semibold">Velog 기술 블로그</span>
+<span class="material-symbols-outlined text-[18px] text-secondary" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Quick Message Form -->
+<div class="lg:col-span-6 bg-surface p-6 md:p-8 rounded-2xl border border-outline-variant/40">
+<h3 class="text-headline-sm font-headline-sm text-on-surface mb-2 font-bold">빠른 메시지 남기기</h3>
+<p class="text-body-sm font-body-sm text-secondary mb-6">입력하신 내용은 등록된 이메일 계정으로 안전하게 전송됩니다.</p>
+<form class="space-y-4" onsubmit="handleFormSubmit(event)">
+<div>
+<label class="block text-label-md font-label-md text-on-surface mb-1.5">이름 또는 소속</label>
+<input class="w-full h-[44px] px-3.5 rounded-lg border border-outline-variant bg-surface-container-lowest text-on-surface placeholder:text-outline focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 text-body-md font-body-md outline-none transition-all" placeholder="예: 홍길동 / OO 연구소" required="" type="text">
+</div>
+<div>
+<label class="block text-label-md font-label-md text-on-surface mb-1.5">회신받으실 이메일</label>
+<input class="w-full h-[44px] px-3.5 rounded-lg border border-outline-variant bg-surface-container-lowest text-on-surface placeholder:text-outline focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 text-body-md font-body-md outline-none transition-all" placeholder="name@example.com" required="" type="email">
+</div>
+<div>
+<label class="block text-label-md font-label-md text-on-surface mb-1.5">메시지 내용</label>
+<textarea class="w-full p-3.5 rounded-lg border border-outline-variant bg-surface-container-lowest text-on-surface placeholder:text-outline focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 text-body-md font-body-md outline-none transition-all" placeholder="제안하시고 싶은 내용이나 문의사항을 자유롭게 작성해 주세요." required="" rows="4"></textarea>
+</div>
+<button class="w-full h-[44px] rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all duration-200 active:scale-95 flex items-center justify-center gap-2 shadow-sm font-semibold" type="submit">
+<span class="material-symbols-outlined text-[18px]" data-icon="send">send</span>
+<span class="">메시지 전송하기</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ========================================================================= -->
+<!-- Footer (Shared Component JSON Source of Truth) -->
+<!-- ========================================================================= -->
+<footer class="w-full bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant/30 dark:border-outline/30 mt-12">
+<div class="flex flex-col sm:flex-row items-center justify-between max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 py-8 gap-4">
+<!-- Footer Copyright -->
+<div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+<span class="text-title-md font-title-md font-bold text-on-surface dark:text-inverse-on-surface">문연호</span>
+<span class="text-body-sm font-body-sm text-secondary dark:text-secondary-fixed-dim">
+          © 2025 Student Portfolio. Built with precision and care.
+        </span>
+</div>
+<!-- Footer Mandatory Links from JSON -->
+<div class="flex items-center space-x-6">
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 text-label-sm font-label-sm" href="mailto:hong@example.com">Email</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 text-label-sm font-label-sm" href="https://github.com/yeonho-moon" rel="noopener noreferrer" target="_blank">Code Repository</a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 text-label-sm font-label-sm" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+          Network Profile
+        </a>
+<a class="text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors duration-150 text-label-sm font-label-sm" href="#about">
+          Publications
+        </a>
+</div>
+</div>
+</footer>
+<!-- ========================================================================= -->
+<!-- Lightweight Inline Vanilla JS for Micro-interactions -->
+<!-- ========================================================================= -->
+<script>
+    function copyEmail() {
+      const email = 'dohyeon.lee@university.edu';
+      navigator.clipboard.writeText(email).then(() => {
+        const copyText = document.getElementById('copy-text');
+        copyText.textContent = '복사됨!';
+        setTimeout(() => {
+          copyText.textContent = '복사';
+        }, 2000);
+      }).catch(() => {
+        alert('이메일 주소: ' + email);
+      });
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      alert('감사합니다! 메시지가 성공적으로 전송되었습니다.');
+      e.target.reset();
+    }
+  </script>
+
+
+</body></html>
